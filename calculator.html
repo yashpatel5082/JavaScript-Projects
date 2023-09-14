@@ -1,0 +1,105 @@
+<!--Created by Yashkumar Vaghasiya-->
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <script src="./js/calculator.js"></script>
+</head>
+<body>
+    <header id="header" class="uni-width center-items">
+        <div>
+          <h1>Tax <span class="pri-color">Calculator App</span> Using Javascript</h1>
+          <a href="index.html" class="pri-color">Home</a>
+          <a href="calculator.html" class="pri-color">Tax Calculator</a>
+          <a href="clock.html" class="pri-color">Clock & Stopwatch</a>
+        </div>
+      </header>
+      <center>
+        <div class ="form">
+                <h2> Sales Tax Calculator</h5>
+                <form name="orderform" id="orderform">
+                <table>
+        </div>
+          <tr><th>
+           <label>Product: </label>
+          </th>
+          <th scope="row">
+           <div class="tax-left-box">
+            <label><span>$</span></label>
+            <input name="price" type="text" id="price" size="10">
+           </div>
+          </th>
+        
+          
+          <tr><th>
+           <label>Quantity</label>
+          </th>
+          <th scope="row">
+           <div class="tax-left-box">
+            <label><span>#</span></label>
+            <input name="quantity" type="text" id="quantity" size="10">
+           </div>
+          </th>
+         
+          <tr><th>
+           <label>Subtotal:</label>
+          </th>
+          <th scope="row">   
+           <div class="tax-left-box">
+            <label>$</label>
+            <input name="subtotal" type="text" id="subtotal" onFocus="this.form.elements[1].focus()" size="10"> &nbsp;&nbsp;
+            <input name="subBtn" onClick="subTotal();" type="button" id="subBtn" value="Subtotal">
+           </div>
+          </th>
+         </tr>
+          
+           <tr><th>
+           <label>Tax:</label>
+          </th>
+           <th scope="row">
+           <div class="tax-left-box">
+            <label>$</label>
+             <input name="salestax" type="text" id="salestax" onFocus="this.form.elements[1].focus()" size="10"> &nbsp;&nbsp;               
+             <input name="taxBtn" onClick="calculateTax();" type="button" id="taxBtn" value="Tax">  
+           </div>
+          </th>
+         </tr>
+         
+          <tr><th>
+           <label>Total:</label>
+          </th>
+          <th scope="row">
+           <div class="tax-left-box">
+            <label>$</label>
+            <input name="gtotal" type="text" id="gtotal" onFocus="this.form.elements[2].focus()" size="10"> &nbsp;&nbsp;
+            <input name="gtotalBtn" onClick="grandTotal();" type="button" id="gtotalBtn" value="Calculate Order">
+           </div>
+          </th>
+         </tr>
+        </table>
+        </form>      
+        </div>
+        </center>
+      <section id="contact" class="dark-bg">
+        <div class="uni-width text-align">
+          <h2>CONTACT</h2>
+          <div class="contact-info center-items">
+            <p>Would you like to work with me? Awesome!</p>
+            <a href="mailto:example123@gmail.com">Mail Me</a>
+            <a href="tel:+123456789">Phone Me</a>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="uni-width center-items">
+          <a href="#header"><i class="fa-solid fa-angle-up"></i></a>
+          <div>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </footer>
+      <script src="./js/calculator.js"></script>
+</body>
+</html>
